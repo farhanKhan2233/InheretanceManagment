@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="../styles/custom.css" />
+  <link rel="stylesheet" href="../styles/about.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../assest/mainlogo.PNG" alt="" />
+        </a>
+        <!-- <p>StyleSensei</p> -->
+      </div>
+      <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="menu" id="menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="translation-button" onclick="toggleTranslation()" style="border: 1px solid orangered">
+        Urdu
+      </button>
+    </nav>
+  </header>
+  <main>
+    <section class="profile-info">
+      <div class="about-content">
+        <h1 class="about-name">Farhan Khan</h1>
+        <p class="about-text" id="about-text">
+          Hello, I am Farhan. I am a diligent and enthusiastic DIT (Diploma in
+          Information Technology) student with a deep passion for technology.
+          My desire is to continuously learn and grow in this ever-evolving
+          field. I approach my studies with unwavering dedication and an
+          insatiable thirst for knowledge, always excited to delve into new
+          concepts and emerging technologies.
+        </p>
+        <button>See More</button>
+      </div>
+      <div class="profile-image">
+        <div class="image-box">
+          <img src="../assest/profile.jpeg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="about-content">
+      <h2>Our Story</h2>
+      <p id="journey-text">
+        My journey as a student has been a rollercoaster of growth, discovery,
+        and hard work. Like many, I started my educational journey with a
+        sense of curiosity and excitement. The world of learning was an
+        uncharted territory, and I was eager to explore it
+      </p>
+    </section>
+    <div class="social-icons">
+      <a href="https://twitter.com/Itx_farhankhan?t=RK7ACRpx5h1iy6vpbx5h3w&s=09#" class="icon-main">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://wa.me/923479397755" class="icon-main">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100018431485130&mibextid=ZbWKwL" class="icon-main">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/itx_farhan__khan/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" class="icon-main">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-row">
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="mainWork.html">inheritance_calculator </a></li>
+          <li><a href="mainWork.html">area Calculator</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Connect</h3>
+        <ul>
+          <li>
+            <a href="https://twitter.com/Itx_farhankhan?t=RK7ACRpx5h1iy6vpbx5h3w&s=09#" class="icon" target="_blank">
+              <p>Twitter</p>
+
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/923479397755" target="_blank" class="icon">
+              <p>Whatsapp</p>
+
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100018431485130&mibextid=ZbWKwL" target="_blank"
+              class="icon">
+              <p>Facebook</p>
+
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/itx_farhan__khan/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="_blank"
+              class="icon">
+              <p>Instagram</p>
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // ==========================translation ==================
+
+    let isEnglish = true;
+
+    const englishText = {
+      text: `Hello, I am Farhan. I am a diligent and enthusiastic DIT (Diploma in Information Technology) student with a deep passion for technology. My desire is to continuously learn and grow in this ever-evolving field. I approach my studies with unwavering dedication and an insatiable thirst for knowledge, always excited to delve into new concepts and emerging technologies.`,
+      journey: `My journey as a student has been a rollercoaster of growth, discovery, and hard work. Like many, I started my educational journey with a sense of curiosity and excitement. The world of learning was an uncharted territory, and I was eager to explore it.`,
+    };
+
+    const urduText = {
+      text: `ہیلو، میں فرحان ہوں۔ میں ایک محنتی اور جذبے سے بھرپور DIT (ڈپلومہِ انفارمیشن ٹیکنالوجی) کا طالب علم ہوں جس میں ٹیکنالوجی کی طرف گہری محبت ہے۔ میری خواہش ہے کہ میں اس حد تک تعلیم حاصل کرنے اور اس مسلسل ترقی اور نئے تصورات اور نئے ٹیکنالوجی کا سراغ لگانے کے لئے ہمیشہ تیار رہوں۔`,
+      journey: `میرا طلباء کے طور پر سفر ایک ترقی، دریافت، اور محنت کا سفر رہا ہے۔ بہت سارے لوگوں کی طرح، میرا تعلیمی سفر دلچسپی اور جذبے کے ساتھ شروع ہوا۔ تعلیم کی دنیا ایک نامعلوم علاقہ تھا، اور میں اسے تلاش کرنے کے لئے بے صبری سے مشغول تھا۔`,
+    };
+
+    function toggleTranslation() {
+      const aboutText = document.getElementById("about-text");
+      const journeyText = document.getElementById("journey-text");
+      console.log(aboutText);
+      if (isEnglish) {
+        aboutText.textContent = urduText.text;
+        journeyText.textContent = urduText.journey;
+        document.getElementById("translation-button").innerText = "Urdu";
+      } else {
+        aboutText.textContent = englishText.text;
+        journeyText.textContent = englishText.journey;
+        document.getElementById("translation-button").innerText = "English";
+      }
+
+      isEnglish = !isEnglish;
+    }
+  </script>
+</body>
+
+</html>

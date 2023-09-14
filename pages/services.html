@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../styles/custom.css" />
+  <link rel="stylesheet" href="../styles/services.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <script src="../scripts/script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../assest/mainlogo.PNG" alt="" />
+        </a>
+        <!-- <p>StyleSensei</p> -->
+      </div>
+      <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="menu" id="menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#" class="active">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="translation-button" onclick="toggleTranslation()" style="border: 1px solid orangered">
+        Urdu
+      </button>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="services-content">
+      <h1 class="services-heading">Customize Your Box Styling</h1>
+      <p class="services-about" id="services-about">
+        Use the controls below to adjust the box shadow, border, size, and
+        text properties of your box. Preview the changes in real-time and copy
+        the generated CSS properties.
+      </p>
+
+    </div>
+    <section class="services-container">
+      <div class="service">
+        <i class="fas fa-desktop icons-services"></i>
+        <h2>Responsive Web Design</h2>
+        <p id="service1">
+          We create stunning and user-friendly websites that adapt seamlessly
+          to various devices and screen sizes.
+        </p>
+      </div>
+      <div class="service">
+        <i class="fas fa-paint-brush icons-services"></i>
+        <h2>Custom UI/UX Design</h2>
+        <p id="service2">
+          Our team designs unique and engaging user interfaces to enhance the
+          overall user experience of your website.
+        </p>
+      </div>
+      <div class="service">
+        <i class="fas fa-code icons-services"></i>
+        <h2>Frontend Development</h2>
+        <p id="service3">
+          We bring your designs to life by coding them into fully functional
+          and interactive web applications.
+        </p>
+      </div>
+      <div class="service">
+        <i class="fa-solid fa-calculator icons-services"></i>
+        <h2>Inheritance Calculator</h2>
+        <p id="service4">An Inheritance Calculator is a financial tool or software designed to help individuals or
+          families estimate the value of assets and wealth they are likely to inherit from a deceased family member or
+          relative.
+        </p>
+      </div>
+      <div class="service">
+        <i class="fa-solid fa-chart-area icons-services"></i>
+        <h2>Area Calculator</h2>
+        <p id="service5">
+          An Area Calculator is a digital tool or software application designed to compute the area of various geometric
+          shapes and figures.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <section class="instractions" id="instraction">
+
+    Certainly! Let's provide descriptions for both the "Calculator" and "Area Calculator" classes, along with
+    explanations of their purposes and how they relate through inheritance:
+    <br />
+    <br />
+    1. Calculator Class:
+    <br />
+    <br />
+
+    Description: The "Calculator" class is a fundamental building block in software development used to perform basic
+    mathematical operations, such as addition, subtraction, multiplication, and division. It encapsulates these
+    operations in methods, making it easier to reuse these functions throughout a program.
+    <br />
+    <br />
+
+    Purpose: The purpose of the "Calculator" class is to provide a generic and reusable set of mathematical functions
+    that can be used in various parts of a software application. It abstracts away the complexity of performing
+    arithmetic operations, ensuring accuracy and reducing code duplication.
+    <br />
+    <br />
+
+    Inheritance: The "Calculator" class serves as the superclass or base class. It defines the core mathematical
+    operations that can be inherited by other classes. This inheritance allows specialized calculators to leverage these
+    basic operations without having to rewrite them.
+    <br />
+    <br />
+
+    2. Area Calculator Class (Inheriting from Calculator):
+    <br />
+    <br />
+
+    Description: The "Area Calculator" class is a specialized class that calculates the areas of geometric shapes, such
+    as rectangles, circles, triangles, and more. It inherits the fundamental mathematical operations (addition,
+    subtraction, multiplication, and division) from the "Calculator" class to perform these calculations.
+    <br />
+    <br />
+
+    Purpose: The purpose of the "Area Calculator" class is to provide a convenient and organized way to calculate the
+    areas of different geometric shapes. By inheriting the "Calculator" class, it gains access to essential arithmetic
+    operations and can use them in conjunction with shape-specific area calculations.
+    <br />
+    <br />
+
+    Inheritance: The "Area Calculator" class demonstrates inheritance by extending the "Calculator" class. This means it
+    inherits the mathematical methods from the "Calculator," allowing it to reuse those methods when performing
+    calculations. This inheritance enables code reusability, maintains consistency, and ensures that mathematical
+    operations are accurate.
+    <br />
+    <br />
+
+    In summary, the "Calculator" class is a generic utility for basic arithmetic operations, while the "Area Calculator"
+    class specializes in calculating areas of geometric shapes and utilizes inheritance to inherit and extend the
+    functionality of the "Calculator" class. This object-oriented approach enhances code organization, reusability, and
+    maintainability in software development.
+  </section>
+
+  <button id="scrollToTopButton">
+    <i class="fas fa-angle-up icon-top"></i>
+  </button>
+  <footer>
+    <div class="footer-row">
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="mainWork.html">inheritance_calculator </a></li>
+          <li><a href="mainWork.html">area Calculator</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Connect</h3>
+        <ul>
+          <li>
+            <a href="https://twitter.com/Itx_farhankhan?t=RK7ACRpx5h1iy6vpbx5h3w&s=09#" class="icon" target="_blank">
+              <p>Twitter</p>
+
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/923479397755" target="_blank" class="icon">
+              <p>Whatsapp</p>
+
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100018431485130&mibextid=ZbWKwL" target="_blank"
+              class="icon">
+              <p>Facebook</p>
+
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/itx_farhan__khan/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="_blank"
+              class="icon">
+              <p>Instagram</p>
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const scrollToTopButton = document.getElementById("scrollToTopButton");
+
+    // Function to scroll to the top of the page
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth", // Add smooth scrolling behavior
+      });
+    }
+
+    // Show the button when the user scrolls down a certain amount
+    window.addEventListener("scroll", () => {
+      if (document.documentElement.scrollTop > 300) {
+        scrollToTopButton.style.display = "block";
+      } else {
+        scrollToTopButton.style.display = "none";
+      }
+    });
+
+    // Add a click event listener to the button
+    scrollToTopButton.addEventListener("click", scrollToTop);
+
+    // ==========================Translation =====================
+
+    let isEnglish = true;
+
+    const englishText = {
+      service1: `We create stunning and user-friendly websites that adapt seamlessly to various devices and screen sizes.`,
+      service2: `Our team designs unique and engaging user interfaces to enhance the overall user experience of your website.`,
+      service3: `We bring your designs to life by coding them into fully functional and interactive web applications.`,
+      servicesAbout: `Use the controls below to adjust the box shadow, border, size, and text properties of your box. Preview the changes in real-time and copy the generated CSS properties.`,
+      instruction: `
+Certainly! Let's provide descriptions for both the "Calculator" and "Area Calculator" classes, along with explanations of their purposes and how they relate through inheritance:
+<br />
+<br />
+1. Calculator Class:
+<br />
+<br />
+
+Description: The "Calculator" class is a fundamental building block in software development used to perform basic mathematical operations, such as addition, subtraction, multiplication, and division. It encapsulates these operations in methods, making it easier to reuse these functions throughout a program.
+<br />
+<br />
+
+Purpose: The purpose of the "Calculator" class is to provide a generic and reusable set of mathematical functions that can be used in various parts of a software application. It abstracts away the complexity of performing arithmetic operations, ensuring accuracy and reducing code duplication.
+<br />
+<br />
+
+Inheritance: The "Calculator" class serves as the superclass or base class. It defines the core mathematical operations that can be inherited by other classes. This inheritance allows specialized calculators to leverage these basic operations without having to rewrite them.
+<br />
+<br />
+
+2. Area Calculator Class (Inheriting from Calculator):
+<br />
+<br />
+
+Description: The "Area Calculator" class is a specialized class that calculates the areas of geometric shapes, such as rectangles, circles, triangles, and more. It inherits the fundamental mathematical operations (addition, subtraction, multiplication, and division) from the "Calculator" class to perform these calculations.
+<br />
+<br />
+
+Purpose: The purpose of the "Area Calculator" class is to provide a convenient and organized way to calculate the areas of different geometric shapes. By inheriting the "Calculator" class, it gains access to essential arithmetic operations and can use them in conjunction with shape-specific area calculations.
+<br />
+<br />
+
+Inheritance: The "Area Calculator" class demonstrates inheritance by extending the "Calculator" class. This means it inherits the mathematical methods from the "Calculator," allowing it to reuse those methods when performing calculations. This inheritance enables code reusability, maintains consistency, and ensures that mathematical operations are accurate.
+<br />
+<br />
+
+In summary, the "Calculator" class is a generic utility for basic arithmetic operations, while the "Area Calculator" class specializes in calculating areas of geometric shapes and utilizes inheritance to inherit and extend the functionality of the "Calculator" class. This object-oriented approach enhances code organization, reusability, and maintainability in software development.
+`,
+    };
+
+    const urduText = {
+      service1: `ہم شاندار اور صارف دوست ویب سائٹس بناتے ہیں جو مختلف آلات اور سکرین کے سائز کے مطابق بغیر کسی رکاوٹ کے ڈھال لیتی ہیں۔`,
+      service2: `ہماری ٹیم آپ کی ویب سائٹ کے صارف کے مجموعی تجربے کو بڑھانے کے لیے منفرد اور پرکشش یوزر انٹرفیس ڈیزائن کرتی ہے۔`,
+      service3: `ہم آپ کے ڈیزائن کو مکمل طور پر فعال اور انٹرایکٹو ویب ایپلیکیشنز میں کوڈ کر کے زندہ کرتے ہیں۔`,
+      servicesAbout: `سروسز کے بارے میں: اپنے باکس کے شیڈو، بارڈر، سائز اور ٹیکسٹ کی خصوصیات کو ایڈجسٹ کرنے کے لیے نیچے دیئے گئے کنٹرولز کا استعمال کریں۔ ریئل ٹائم میں تبدیلیوں کا جائزہ لیں اور تیار کردہ CSS پراپرٹیز کو کاپی کریں۔`,
+      instruction: `بے شک! آئیے "کیلکولیٹر" اور "ایریا کیلکولیٹر" دونوں کلاسوں کے لیے وضاحت فراہم کرتے ہیں، ان کے مقاصد کی وضاحت کے ساتھ اور وراثت سے ان کا تعلق کیسے ہے:
+      <br />
+      <br />
+
+1. کیلکولیٹر کلاس:
+<br />
+<br />
+
+تفصیل: "کیلکولیٹر" کلاس سافٹ ویئر ڈویلپمنٹ میں ایک بنیادی تعمیراتی بلاک ہے جسے ریاضی کے بنیادی کاموں، جیسے کہ اضافہ، گھٹاؤ، ضرب اور تقسیم کو انجام دینے کے لیے استعمال کیا جاتا ہے۔ یہ ان کارروائیوں کو طریقوں میں سمیٹتا ہے، جس سے پورے پروگرام میں ان افعال کو دوبارہ استعمال کرنا آسان ہو جاتا ہے۔
+<br />
+<br />
+
+مقصد: "کیلکولیٹر" کلاس کا مقصد ریاضیاتی افعال کا ایک عام اور دوبارہ قابل استعمال سیٹ فراہم کرنا ہے جو سافٹ ویئر ایپلیکیشن کے مختلف حصوں میں استعمال کیا جا سکتا ہے۔ یہ ریاضی کے عمل کو انجام دینے، درستگی کو یقینی بنانے اور کوڈ کی نقل کو کم کرنے کی پیچیدگی کو دور کرتا ہے۔
+<br />
+<br />
+
+وراثت: "کیلکولیٹر" کلاس سپر کلاس یا بیس کلاس کے طور پر کام کرتی ہے۔ یہ بنیادی ریاضی کی کارروائیوں کی وضاحت کرتا ہے جو دوسری کلاسوں کو وراثت میں مل سکتا ہے۔ یہ وراثت خصوصی کیلکولیٹرز کو ان بنیادی کاموں کو دوبارہ لکھے بغیر فائدہ اٹھانے کی اجازت دیتی ہے۔
+<br />
+<br />
+
+2. ایریا کیلکولیٹر کلاس (کیلکولیٹر سے وراثت میں ملنا):
+<br />
+<br />
+
+تفصیل: "علاقہ کیلکولیٹر" کلاس ایک خصوصی کلاس ہے جو ہندسی اشکال کے علاقوں کا حساب لگاتی ہے، جیسے مستطیل، دائرے، مثلث وغیرہ۔ یہ حسابات کو انجام دینے کے لیے "کیلکولیٹر" کلاس سے بنیادی ریاضیاتی عمل (اضافہ، گھٹاؤ، ضرب، اور تقسیم) کو وراثت میں ملا ہے۔
+<br />
+<br />
+
+مقصد: "ایریا کیلکولیٹر" کلاس کا مقصد مختلف ہندسی اشکال کے علاقوں کا حساب لگانے کے لیے ایک آسان اور منظم طریقہ فراہم کرنا ہے۔ "کیلکولیٹر" کلاس کو وراثت میں لے کر، یہ ضروری ریاضی کی کارروائیوں تک رسائی حاصل کرتا ہے اور انہیں شکل کے مخصوص علاقے کے حساب کے ساتھ استعمال کر سکتا ہے۔
+<br />
+<br />
+
+وراثت: "ایریا کیلکولیٹر" کلاس "کیلکولیٹر" کلاس کو بڑھا کر وراثت کا مظاہرہ کرتی ہے۔ اس کا مطلب یہ ہے کہ اسے "کیلکولیٹر" سے ریاضی کے طریقے وراثت میں ملے ہیں، جس سے وہ حساب کرتے وقت ان طریقوں کو دوبارہ استعمال کر سکتا ہے۔ یہ وراثت کوڈ کو دوبارہ استعمال کرنے کے قابل بناتا ہے، مستقل مزاجی کو برقرار رکھتا ہے، اور اس بات کو یقینی بناتا ہے کہ ریاضی کی کارروائیاں درست ہوں۔
+<br />
+<br />
+خلاصہ طور پر، "کیلکولیٹر" کلاس بنیادی ریاضی کی کارروائیوں کے لیے ایک عام افادیت ہے، جب کہ "ایریا کیلکولیٹر" کلاس ہندسی اشکال کے علاقوں کا حساب لگانے میں مہارت رکھتی ہے اور "کیلکولیٹر" کلاس کی فعالیت کو وراثت اور توسیع دینے کے لیے وراثت کا استعمال کرتی ہے۔ یہ اعتراض پر مبنی نقطہ نظر سافٹ ویئر کی ترقی میں کوڈ کی تنظیم، دوبارہ استعمال اور برقرار رکھنے کی صلاحیت کو بڑھاتا ہے۔`,
+    };
+
+    function toggleTranslation() {
+      const servicesAboutText = document.getElementById("services-about");
+      const service1Text = document.getElementById("service1");
+      const service2Text = document.getElementById("service2");
+      const service3Text = document.getElementById("service3");
+      const instractionText = document.getElementById("instraction");
+      // console.log(instractionText)
+
+      if (isEnglish) {
+        servicesAboutText.textContent = urduText.servicesAbout;
+        service1Text.textContent = urduText.service1;
+        service2Text.textContent = urduText.service2;
+        service3Text.textContent = urduText.service3;
+        instractionText.innerHTML = urduText.instruction;
+        document.getElementById("translation-button").innerText = "Urdu";
+      } else {
+        servicesAboutText.textContent = englishText.servicesAbout;
+        service1Text.textContent = englishText.service1;
+        service2Text.textContent = englishText.service2;
+        service3Text.textContent = englishText.service3;
+        instractionText.innerHTML = englishText.instruction;
+        document.getElementById("translation-button").innerText = "English";
+      }
+
+      isEnglish = !isEnglish;
+    }
+  </script>
+  <!-- Your page content goes here -->
+</body>
+
+</html>

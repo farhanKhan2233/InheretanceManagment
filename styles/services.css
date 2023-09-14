@@ -1,0 +1,75 @@
+.main {
+  background: url("/assest/aditya-chinchure-S1ToogvRvlU-unsplash.jpg");
+  width: 100%;
+  padding: 20px 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.services-content {
+  padding: 10vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 20px 20%;
+}
+
+.services-about {
+  font-size: 14px;
+  text-align: center;
+}
+
+.services-container button {
+  margin: 0;
+}
+
+.services-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.699);
+  height: 250px;
+  padding: 10px;
+  max-width: 350px;
+  min-width: 250px;
+}
+
+.icon-top {
+  font-size: 20px;
+  color: #0077b5;
+  margin-bottom: 10px;
+}
+
+.icons-services {
+  font-size: 48px;
+  color: #0077b5;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.instractions {
+  margin: 10vh;
+  padding: 20px;
+  background-color: white;
+}

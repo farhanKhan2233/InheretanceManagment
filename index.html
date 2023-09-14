@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> InheritEase - Your Trusted Inheritance Management Partner</title>
+  <link rel="stylesheet" href="styles/custom.css" />
+  <link rel="stylesheet" href="styles/index.css" />
+  <link rel="shortcut icon" href="assest/mainlogo.PNG" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="#">
+          <img src="assest/mainlogo.PNG" alt="" />
+        </a>
+        <!-- <p>StyleSensei</p> -->
+      </div>
+      <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="menu" id="menu">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/services.html">Services</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+      <button id="translation-button" onclick="toggleTranslation()" style="border: 1px solid orangered">
+        Urdu
+      </button>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="page-content">
+      <h1 class="page-heading">InheritanceIQ</h1>
+      <p class="page-about" id="page-about">
+        Welcome to LegacyGuardians, your trusted partner in the world of inheritance management. We understand that
+        navigating the complexities of inheritance can be emotionally challenging and financially daunting. That's why
+        we've created a comprehensive platform to guide you through this important journey with care and expertise.
+        This description emphasizes the website's services, its commitment to compassionate guidance, and its holistic
+        approach to inheritance management, all aimed at providing users with peace of mind as they navigate the
+        complexities of inheritance.
+      </p>
+      <a href="pages/mainWork.html">
+        <button class="page-button">Get Started</button>
+      </a>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-row">
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="pages/about.html">About Us</a></li>
+          <li><a href="pages/services.html">Services</a></li>
+          <li><a href="pages/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="mainWork.html">inheritance_calculator </a></li>
+          <li><a href="mainWork.html">area Calculator</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Connect</h3>
+        <ul>
+          <li>
+            <a href="https://twitter.com/Itx_farhankhan?t=RK7ACRpx5h1iy6vpbx5h3w&s=09#" class="icon" target="_blank">
+              <p>Twitter</p>
+
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/923479397755" target="_blank" class="icon">
+              <p>Whatsapp</p>
+
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100018431485130&mibextid=ZbWKwL" target="_blank"
+              class="icon">
+              <p>Facebook</p>
+
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/itx_farhan__khan/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="_blank"
+              class="icon">
+              <p>Instagram</p>
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // ==========================translation ==================
+
+    let isEnglish = true;
+
+    const englishText = {
+      text: ` Welcome to LegacyGuardians, your trusted partner in the world of inheritance management. We understand that
+        navigating the complexities of inheritance can be emotionally challenging and financially daunting. That's why
+        we've created a comprehensive platform to guide you through this important journey with care and expertise.
+        This description emphasizes the website's services, its commitment to compassionate guidance, and its holistic
+        approach to inheritance management, all aimed at providing users with peace of mind as they navigate the
+        complexities of inheritance.`,
+    };
+
+    const urduText = {
+      text: `وراثت کے انتظام کی دنیا میں آپ کے قابل اعتماد پارٹنر، LegacyGuardians میں خوش آمدید۔ ہم یہ سمجھتے ہیں۔
+        وراثت کی پیچیدگیوں کو تلاش کرنا جذباتی طور پر مشکل اور مالی طور پر مشکل ہو سکتا ہے۔ اس لیے
+        ہم نے دیکھ بھال اور مہارت کے ساتھ اس اہم سفر میں آپ کی رہنمائی کے لیے ایک جامع پلیٹ فارم بنایا ہے۔
+        یہ تفصیل ویب سائٹ کی خدمات، ہمدردانہ رہنمائی کے لیے اس کی وابستگی، اور اس کی جامعیت پر زور دیتی ہے۔
+        وراثت کے انتظام کے لیے نقطہ نظر، سبھی کا مقصد صارفین کو نیویگیٹ کرتے وقت ذہنی سکون فراہم کرنا ہے۔
+        وراثت کی پیچیدگیاں,`
+    };
+
+    function toggleTranslation() {
+      const aboutText = document.getElementById("page-about");
+      console.log(aboutText);
+      if (isEnglish) {
+        aboutText.textContent = urduText.text;
+        document.getElementById("translation-button").innerText = "Urdu";
+      } else {
+        aboutText.textContent = englishText.text;
+        document.getElementById("translation-button").innerText = "English";
+      }
+
+      isEnglish = !isEnglish;
+    }
+  </script>
+</body>
+
+</html>

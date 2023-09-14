@@ -1,0 +1,26 @@
+.main{
+    background:url('/assest/aditya-chinchure-S1ToogvRvlU-unsplash.jpg');
+    width: 100%;
+    height: calc(100vh - 47px);
+
+}
+
+.page-content{
+    padding: 10vh;
+    background-color: rgba(0,0,0, 0.6) ;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+
+}
+.page-about{
+    text-indent: 20px;
+}
+
+
+
+
+
+
+

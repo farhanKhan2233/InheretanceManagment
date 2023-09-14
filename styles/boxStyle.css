@@ -1,0 +1,49 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+.box-section {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+header {
+  box-shadow: 0 0 8px 2px gray;
+}
+
+section {
+  width: 100%;
+  text-align: center;
+  background-color: rgb(184, 184, 184);
+  padding: 20px;
+}
+
+.section-heading {
+  align-items: center;
+}
+
+section .form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form div {
+  margin: 10px 0;
+  text-align: left;
+  width: 80%;
+  position: relative;
+}
+
+.form input {
+  width: 250px;
+  position: absolute;
+  right: 0;
+
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/custom.css" />
+  <link rel="stylesheet" href="../styles/contact.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+/>
+  <title>Contact Us</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../assest/mainlogo.PNG" alt="" />
+
+        </a>
+        <!-- <p>StyleSensei</p> -->
+      </div>
+      <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="menu" id="menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="#" class="active">Contact</a></li>
+      </ul>
+      <button id="translation-button" onclick="toggleTranslation()"
+        style="border: 1px solid orangered; color: orangered">
+        Urdu
+      </button>
+    </nav>
+  </header>
+  <div class="header contact-text">
+    <h1>Contact Us</h1>
+    <p>
+      We'd love to hear from you. Please fill out the form below to get in
+      touch.
+    </p>
+    <div class="contact-info">
+      <p>Phone:<i> +923479397755</i></p>
+      <p>Email: <i>farhankhan755582@gmail.com</i></p>
+      <p>Address: <i> aligrama , kabal , swat , KPK</i></p>
+    </div>
+
+  </div>
+  <main>
+    <form action="https://formspree.io/f/xaygbwgj" method="POST">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <footer>
+    <div class="footer-row">
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="mainWork.html">inheritance_calculator </a></li>
+          <li><a href="mainWork.html">area Calculator</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Connect</h3>
+        <ul>
+          <li>
+            <a href="https://twitter.com/Itx_farhankhan?t=RK7ACRpx5h1iy6vpbx5h3w&s=09#" class="icon" target="_blank">
+              <p>Twitter</p>
+
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/923479397755" target="_blank" class="icon">
+              <p>Whatsapp</p>
+
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100018431485130&mibextid=ZbWKwL" target="_blank"
+              class="icon">
+              <p>Facebook</p>
+
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/itx_farhan__khan/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="_blank"
+              class="icon">
+              <p>Instagram</p>
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/custom.css" />
+  <link rel="stylesheet" href="../styles/boxStyle.css" />
+
+  <title>Box Shadow Generator</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="../index.html">
+          <img src="assest/mainlogo.PNG" alt="" />
+        </a>
+        <!-- <p>StyleSensei</p> -->
+      </div>
+      <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="menu" id="menu">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="werasat">
+    <h1 class="werasat-heading">Inheritance Calculator</h1>
+    <form id="calculator-form" class="form">
+      <div class="form-control">
+        <label for="sons">Enter the number of sons:</label>
+        <input type="number" id="sons" step="any" required><br>
+
+      </div>
+      <div class="form-control">
+        <label for="daughters">Enter the number of daughters:</label>
+        <input type="number" id="daughters" step="any" required><br>
+      </div>
+      <div class="form-control">
+
+        <label for="leftAmount">Enter the left amount of a deceased person:</label>
+        <input type="number" id="leftAmount" step="any" required><br>
+      </div>
+      <button type="button" id="calculate-button">Calculate</button>
+    </form>
+
+    <h2 class="result">Results:</h2>
+    <p id="sonsShare"></p>
+    <p id="daughtersShare"></p>
+
+  </section>
+  <hr>
+  <section class="container">
+    <h1>Area Calculator</h1>
+    <div class="form">
+      <div class="input-group">
+        <label for="length">Length (in feet):</label>
+        <input type="number" id="length" step="0.01" placeholder="Enter Length">
+      </div>
+      <div class="input-group">
+        <label for="width">Width (in feet):</label>
+        <input type="number" id="width" step="0.01" placeholder="Enter Width">
+      </div>
+      <div class="input-group">
+        <label for="price">Price per Square Foot (optional):</label>
+        <input type="number" id="price" step="0.01" placeholder="Enter Price">
+      </div>
+      <button id="calculateBtn">Calculate</button>
+      <div class="result">
+        <p>Total Area: <span id="totalArea">0</span> sq. ft.</p>
+        <p>Total Amount: Rs <span id="totalAmount">N/A</span></p>
+      </div>
+    </div>
+  </section>
+     
+  <script src="../scripts/inheritance_calculator.js"></script>
+
+</body>
+
+</html>
